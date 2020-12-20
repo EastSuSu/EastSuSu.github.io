@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+	div,table,tr,p,ul,li
+	{
+		word-wrap:break-word;
+		padding:0;
+		margin:0;
+	}
+	body
+	{
+		background-color:#EAEAEA;
+	}
+	#top
+	{
+		width:1240px;
+		height:410px;
+		margin:0 auto;
+	}
+	#logo
+	{
+		width:240px;
+		height:410px;;
+		background-image:url(imgs/d2fde4bf1a9830b292cb27c74e292c1a.png);
+		background-repeat:no-repeat;
+		background-position:center;
+		float:left;
+		background-color:#7F7F7F;
+	}
+	#picnav
+	{
+		width:1000px;
+		height:410px;
+		float:right;
+	}
+	#topbar/*banner*/
+	{
+		background-image:url(imgs/banner.jpg);
+		width:1000px;
+		height:365px;
+		margin:0 auto;
+	}
+	#navbar/*导航条*/
+	{
+		background-image:url(imgs/navbar.png);
+		height:45px;
+		background-repeat:repeat-x;
+		margin:0 auto;
+	}
+	#navbar ol
+	{
+		height:45px;
+		width:1000px;
+		margin:0 auto;
+		text-align:center;	
+	}
+	#navbar li
+	{
+		float:left;
+		width:120px;
+		height:45px;
+		line-height:45px;
+		text-align:center;
+		margin:0 auto;
+		list-style-type:none;
+		font-family:"微软雅黑";
+	}
+	#navbar li a
+	{
+		color:#FFF;
+		font-family:"微软雅黑";
+	 	text-decoration:none;	  
+	 	float:left;
+	 	width:124px;
+	 	height:45px;
+	}
+	#navbar li a:hover
+	{
+	 	text-decoration:underline;
+	 	background-color:#333;
+	}
+	#middle
+	{
+		width:1240px;
+		height:800px;
+		background-image:url(imgs/esgrgd.png);
+		margin:0 auto;
+	}
+	#form1
+	{
+		width:300px;
+		height:760px;
+		float:left;
+		margin-left:20px;
+		margin-top:20px;
+		background-image:url(imgs/300.png);
+	}
+	#middle-main
+	{
+		width:880px;
+		height:760px;
+		float:right;
+		margin-right:20px;
+		margin-top:20px;
+		/*background-color:#C93;*/
+	}
+	#middle-main-first
+	{
+		width:860px;
+		height:360px;
+		margin-left:10px;
+		margin-top:10px;
+		/*background-color:#0C6;*/
+	}
+	#middle-main-second
+	{
+		width:860px;
+		height:360px;
+		margin-left:10px;
+		margin-top:20px;
+		/*background-color:#0FF;*/
+	}
+	#model1
+	{
+		width:420px;
+		height:360px;
+		float:left;
+	}
+	#model2
+	{
+		width:420px;
+		height:360px;
+		float:right;
+	}
+	#model3
+	{
+		width:420px;
+		height:360px;
+		float:left;
+	}
+	#model4
+	{
+		width:420px;
+		height:360px;
+		float:right;
+	}
+	#model1 .title
+	{
+		width:420px;
+		height:100px;
+		margin-top:0;
+		background-image:url(imgs/df88283844115c8188b5bba4623015d5.png);
+		background-repeat:no-repeat;
+		background-position:left;
+		background-size:100px 70px;
+	}
+	#model1 .title p
+	{
+		font-family:"叶根友毛笔行书2.0版";
+		font-size:30px;
+		margin-left:100px;
+		text-align:left;
+		line-height:100px;
+	}
+	#model1 .maintext p
+	{
+		font-family:"楷体";
+		font-size:16px;
+		text-indent:2em;
+	}
+	#model2 .title
+	{
+		width:420px;
+		height:100px;
+		margin-top:0;
+		background-image:url(imgs/0160688fefcda79015c9ebbad9dcf22d.png);
+		background-repeat:no-repeat;
+		background-position:left;
+		background-size:100px 100px;
+	}
+	#model2 .title p
+	{
+		font-family:"叶根友毛笔行书2.0版";
+		font-size:30px;
+		margin-left:100px;
+		text-align:left;
+		line-height:100px;
+	}
+	#model2 .maintext ul
+	{
+		list-style-type:hiragana-iroha;
+		list-style-position:inside;
+	}
+	#model2 .maintext li
+	{
+		font-family:"楷体";
+		font-size:16px;
+		text-indent:2em;
+		line-height:26px;
+	}
+	#model3 .title
+	{
+		width:420px;
+		height:100px;
+		margin-top:0;
+		background-image:url(imgs/15a2f898c712fde8eea8fb4464136390.png);
+		background-repeat:no-repeat;
+		background-position:left;
+		background-size:100px 130px;
+	}
+	#model3 .title p
+	{
+		font-family:"叶根友毛笔行书2.0版";
+		font-size:30px;
+		margin-left:100px;
+		text-align:left;
+		line-height:100px;
+	}
+	#model3 .maintext p
+	{
+		font-family:"楷体";
+		font-size:16px;
+		text-indent:2em;
+	}
+	#model4 .title
+	{
+		width:420px;
+		height:100px;
+		margin-top:0;
+		background-image:url(imgs/jiaozi5.png);
+		background-repeat:no-repeat;
+		background-position:left;
+		background-size:100px 60px;
+	}
+	#model4 .title p
+	{
+		font-family:"叶根友毛笔行书2.0版";
+		font-size:30px;
+		margin-left:100px;
+		text-align:left;
+		line-height:100px;
+	}
+	#model4 .maintext p
+	{
+		font-family:"楷体";
+		font-size:16px;
+		text-indent:2em;
+	}
+	#bottom
+	{
+		width:1240px;
+		height:60px;
+		background-color:#768085;
+		margin:0 auto;
+	}
+	#bottom p
+	{
+		text-align:center;
+		font-size:10px;
+		margin-top:10px;
+		color:#FFF;
+	}
+	#form1 .user
+	{
+		width:300px;
+		height:100px;
+		margin-top:60px;
+		background-image:url(imgs/jiaozi1.png);
+		background-repeat:no-repeat;
+		background-position:left;
+		background-size:50px 40px;
+	}
+	#form1 .user p
+	{
+		text-align:left;
+		margin-left:60px;
+		padding-top:20px;
+		line-height:18px;
+		font-size:18px;
+		font-family:"叶根友毛笔行书2.0版"；
+	}
+	#form1 .user input
+	{
+		margin-left:60px;
+		margin-top:20px;
+	}
+	#form1 .key
+	{
+		width:300px;
+		height:100px;
+		background-image:url(imgs/jiaozi1.png);
+		background-repeat:no-repeat;
+		background-position:left;
+		background-size:50px 40px;
+	}
+	#form1 .key p
+	{
+		text-align:left;
+		margin-left:60px;
+		padding-top:20px;
+		line-height:18px;
+		font-size:18px;
+		font-family:"叶根友毛笔行书2.0版"；
+	}
+	#form1 .key input
+	{
+		margin-left:60px;
+		margin-top:20px;
+	}
+	#form1 .gender
+	{
+		width:300px;
+		height:100px;
+		background-image:url(imgs/jiaozi1.png);
+		background-repeat:no-repeat;
+		background-position:left;
+		background-size:50px 40px;
+	}
+	#form1 .gender .p1
+	{
+		text-align:left;
+		margin-left:60px;
+		padding-top:20px;
+		line-height:18px;
+		font-size:18px;
+		font-family:"叶根友毛笔行书2.0版"；
+	}
+	#form1 .gender .p2
+	{
+		margin-left:60px;
+		margin-top:20px;
+		font-family:"叶根友毛笔行书2.0版";
+	}
+	#form1 .attitude
+	{
+		width:300px;
+		height:130px;
+		background-image:url(imgs/jiaozi1.png);
+		background-repeat:no-repeat;
+		background-position:left;
+		background-size:50px 40px;
+	}
+	#form1 .attitude .p1
+	{
+		text-align:left;
+		margin-left:60px;
+		padding-top:20px;
+		line-height:18px;
+		font-size:18px;
+		font-family:"叶根友毛笔行书2.0版"；
+	}
+	#form1 .attitude .p2
+	{
+		margin-left:60px;
+		margin-top:20px;
+		font-family:"叶根友毛笔行书2.0版";
+	}
+	#form1 .attitude .p3
+	{
+		margin-left:60px;
+		margin-top:10px;
+		font-family:"叶根友毛笔行书2.0版";
+	}
+	#form1 .text
+	{
+		width:300px;
+		height:150px;
+		background-image:url(imgs/jiaozi1.png);
+		background-repeat:no-repeat;
+		background-position:left;
+		background-size:50px 40px;
+	}
+	#form1 .text p
+	{
+		text-align:left;
+		margin-left:60px;
+		padding-top:20px;
+		line-height:18px;
+		font-size:18px;
+		font-family:"叶根友毛笔行书2.0版"；
+	}
+	#form1 .text textarea
+	{
+		margin-left:60px;
+		margin-top:20px;
+		height:80px;
+	}
+	#form1 .last
+	{
+		width:300px;
+		height:100px;
+	}
+	#form1 .last input
+	{
+		margin-top:20px;
+		margin-left:70px;
+	}
+</style>
+</head>
+
+<body>
+    <div id="top"><!--logo图片和banner图片和导航条 -->
+        <div id="logo"><!--logo图片 -->
+        </div>
+        <div id="picnav"><!--banner图片和导航条 -->
+            <div id="topbar"><!--banner图片 -->
+            </div>
+            <div id="navbar"><!--导航条 -->
+                <ol>                  
+                    <li><a href="http://baike.so.com/doc/5405733-5643525.html">冬至百科</a></li>
+                    <li><a href="http://wenda.so.com/q/1362676803060587?src=140">北方习俗</a></li>
+                    <li><a href="http://wenda.so.com/q/1372214577067895">南方习俗</a></li>
+                    <li><a href="http://wenda.so.com/q/1369678025068866?src=150">冬至来历</a></li>
+                    <li><a href="http://wenda.so.com/q/1373074744066658">冬至养生</a></li>
+                    <li><a href="http://wenda.so.com/q/1378410856079730">冬至童谣</a></li>
+                    <li><a href="http://wenda.so.com/q/1362516150067038?src=150">冬至诗歌</a></li>
+                    <li><a href="introduce.html">自我介绍</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div id="middle"><!--表单和网页主体 -->
+        <div id="form1"><!--表单 -->
+            <form name="form1">
+                <div class="user">
+                	<p>阁下账号：</p>
+                    <input type="text" name="users" />
+                </div>
+                <div class="key">
+                	<p>阁下密码：</p>
+                    <input type="password" name="keys" />
+                </div>
+                <div  class="gender">
+                	<p class="p1">阁下性别：</p>
+                	<p class="p2">公子<input type="radio" name="gender" value="man"/>
+                    姑娘<input type="radio" name="gender" value="woman" /></p>
+                </div>
+                <div class="attitude">
+                	<p class="p1">阁下喜欢我们什么板块呢：</p>
+                    <p class="p2"><input type="checkbox" name="model" value="1" />基本认识
+                        <input type="checkbox" name="model" value="2" />冬至谚语</p>
+                    <p class="p3"><input type="checkbox" name="model" value="3" />南北风俗
+                        <input type="checkbox" name="model" value="4" />冬至养生</p>
+                </div>
+                <div class="text">
+                	<p>阁下对我们的寄语：</p>
+                    <textarea name="intro"></textarea>
+                </div>
+                <div class="last">
+                    <input type="submit" value="登陆" />
+                    <input type="reset" value="重置" />
+                </div>
+                
+                
+            </form>
+        </div>
+        <div id="middle-main"><!--网页主体 -->
+            <div id="middle-main-first">
+                <div id="model1"><!--第一个板块 -->
+                    <div class="title"><p>基本认识</p>
+                    </div>
+                    <div class="maintext">
+                        <p>冬至（英语：winter solstice），又称“冬节”、“贺冬”，华夏二十四节气之一、八大天象类节气之一，与夏至相对。冬至在太阳到达黄经270°时开始，时于每年公历12月22日左右。据传，冬至在历史上的周代是新年元旦，曾经是个很热闹的日子。</p>
+                        <p>冬至这天，太阳直射地面的位置到达一年的最南端，几乎直射南回归线（南纬23°26'）。这一天北半球得到的阳光最少，比南半球少了50%。北半球的白昼达到最短，且越往北白昼越短。</p>
+                        <p>比较常见的是，在中国北方有冬至吃饺子的风俗。俗话说：“冬至到，吃水饺。”而南方则是吃汤圆，当然也有例外，如在山东滕州等地冬至习惯叫做数九，流行过数九当天喝羊肉汤的习俗，寓意驱除寒冷之意。</p>
+                    </div>
+                </div>
+                <div id="model2"><!--第二个板块 -->
+                    <div class="title"><p>冬至谚语</p>
+                    </div>
+                    <div class="maintext">
+                        <ul>
+                            <li>清爽冬至邋遢年，邋遢冬至清爽年。(赣)</li>
+                            <li>冬至晴，正月雨；冬至雨，正月晴。(浙)</li>
+                            <li>冬至晴，新年雨，中秋有雨冬至晴。(黑)</li>
+                            <li>冬至晴，新年雨；冬至雨，新年晴。(鲁、湘)</li>
+                            <li>冬至冷，春节暖；冬至暖，春节冷。(湘、粤)</li>
+                            <li>冬至不冷，夏至不热。(湘)</li>
+                            <li>冬至暖，冷到三月中；冬至冷，明春暖得早。(桂)</li>
+                            <li>冬至暖，烤火到小满。(桂)</li>
+                            <li>冬至西北风，来年干一春。(晋)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="middle-main-second"><!--第二行 -->
+                <div id="model3"><!--第三个板块 -->
+                    <div class="title"><p>南北习俗</p>
+                    </div>
+                    <div class="maintext">
+                        <p>冬至是养生的大好时机，主要是因为"气始于冬至"。因为从冬季开始，生命活动开始由盛转衰，由动转静。此时科学养生有助于保证旺盛的精力而防早衰，达到延年益寿的目的。冬至时节饮食宜多样，谷、果、肉、蔬合理搭配，适当选用高钙食品。</p>
+                        <p>各地在冬至时有不同的风俗，北方地区有冬至宰羊、吃饺子、吃馄饨的习俗，南方地区在这一天则有吃冬至米团、冬至长线面的习惯，而苏南人在冬至时吃大葱炒豆腐。</p>
+                        <p>冬至经过数千年发展，形成了独特的节令食文化。比较常见的是，在中国北方有冬至吃饺子的风俗。俗话说：“冬至到，吃水饺。”而南方则是吃汤圆，当然也有例外。如在山东滕州流行冬至当天喝羊肉汤的习俗，寓意驱除寒冷之意。</p>
+                        <p>各地食俗不同，但吃水饺最为常见。</p>
+                    </div>
+                </div>
+                <div id="model4"><!--第四个板块 -->
+                    <div class="title"><p>冬至养生</p>
+                    </div>
+                    <div class="maintext">
+                        <p>冬至在养生学上是一个最重要的节气，主要是因为"冬至一阳生"。冬至到小寒、大寒，是最冷的季节，患心脏和高血压病的人往往会病情加重，患"中风"者增多，天冷也易冻伤。</p>
+                        <p>注意防寒保暖。在气温降到0℃以下时，要及时增添衣服，衣裤既要保暖性能好，又要柔软宽松，不宜穿得过紧，以利血液流畅。</p>
+                        <p>合理调节饮食起居，不酗酒、不吸烟，不过度劳累。</p>
+                        <p>保持良好的心境，情绪要稳定、愉快，切忌发怒、急躁和精神抑郁。</p>
+                        <p>进行适当的御寒锻炼，如平时坚持用冷水洗脸等，提高机体对寒冷的适应性和耐寒能力。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom"><!--版权栏 -->
+    	<p>版权所有 绝对正版</p>
+        <p>联系电话：7427417474741</p>
+    </div>
+</body>
+</html>
