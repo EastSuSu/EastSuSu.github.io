@@ -1233,6 +1233,7 @@ pre .javascript .function {
   cursor: pointer;
   cursor: zoom-in;
   cursor: -webkit-zoom-in;
+  border: none;
 }
 .post-body .image-caption,
 .post-body .figure .caption {
@@ -1823,7 +1824,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff25;
+  background: #9432f9;
 }
 .links-of-blogroll {
   font-size: 13px;
