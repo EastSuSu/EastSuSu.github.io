@@ -79,26 +79,26 @@
 
 
 
-<meta name="description" content="[TOC] Docker概述看B站狂神的视频自己做的Docker笔记：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1og4y1q7M4 什么是Docker 轻量级的应用容器引擎  Docker能干嘛（为什么要用Docker） 在自己的电脑可用，但是换个电脑就不行了  发布的时候，要在每一种机器去部署环境，费时费力   于是有一个解决方案：项目能不能带上环境打包？  12原来：">
+<meta name="description" content="title: Dockerdate: 2022-04-9 13:26:12tags: [TOC] Docker概述看B站狂神的视频自己做的Docker笔记：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1og4y1q7M4 什么是Docker 轻量级的应用容器引擎  Docker能干嘛（为什么要用Docker） 在自己的电脑可用，但是换个电脑就不行了  发布的时候，要在每一种机">
 <meta property="og:type" content="article">
 <meta property="og:title" content="旺仔小窝">
 <meta property="og:url" content="https://mjwang.xyz/2022/04/09/docker/index.html">
 <meta property="og:site_name" content="旺仔小窝">
-<meta property="og:description" content="[TOC] Docker概述看B站狂神的视频自己做的Docker笔记：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1og4y1q7M4 什么是Docker 轻量级的应用容器引擎  Docker能干嘛（为什么要用Docker） 在自己的电脑可用，但是换个电脑就不行了  发布的时候，要在每一种机器去部署环境，费时费力   于是有一个解决方案：项目能不能带上环境打包？  12原来：">
+<meta property="og:description" content="title: Dockerdate: 2022-04-9 13:26:12tags: [TOC] Docker概述看B站狂神的视频自己做的Docker笔记：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1og4y1q7M4 什么是Docker 轻量级的应用容器引擎  Docker能干嘛（为什么要用Docker） 在自己的电脑可用，但是换个电脑就不行了  发布的时候，要在每一种机">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://mjwang.xyz/docker%5Cvisualmachine_docker.webp">
-<meta property="og:image" content="https://mjwang.xyz/docker%5Cbase-arc.webp">
+<meta property="og:image" content="https://img0.baidu.com/it/u=4060287005,2099330595&fm=253&fmt=auto&app=138&f=JPEG?w=950&h=500">
+<meta property="og:image" content="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimages2018.cnblogs.com%2Fblog%2F1197333%2F201807%2F1197333-20180715120220239-1924184135.png&refer=http%3A%2F%2Fimages2018.cnblogs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1651390630&t=4e03ae182fb86f63695c71225fe60b5b">
 <meta property="og:image" content="c:/Users/wmj/Desktop/docker/hello-world-process.png">
-<meta property="og:image" content="https://mjwang.xyz/docker%5Cimage-20220402222357941.png">
+<meta property="og:image" content="c:/Users/wmj/AppData/Roaming/Typora/typora-user-images/image-20220402222357941.png">
 <meta property="og:image" content="https://mjwang.xyz/docker%5Ckibana-es.png">
 <meta property="og:image" content="https://mjwang.xyz/docker%5Cdocker-image-get.jpeg">
-<meta property="og:image" content="https://mjwang.xyz/docker%5Cdocker-network.png">
-<meta property="og:image" content="https://mjwang.xyz/docker%5Cnetwork-connection.png">
+<meta property="og:image" content="c:/Users/wmj/Desktop/docker/docker/docker-network.png">
+<meta property="og:image" content="c:/Users/wmj/Desktop/docker/docker/network-connection.png">
 <meta property="article:published_time" content="2022-04-09T05:19:56.178Z">
-<meta property="article:modified_time" content="2022-04-09T05:19:22.699Z">
+<meta property="article:modified_time" content="2022-04-09T05:27:38.087Z">
 <meta property="article:author" content="Mengjie Wang">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://mjwang.xyz/docker%5Cvisualmachine_docker.webp">
+<meta name="twitter:image" content="https://img0.baidu.com/it/u=4060287005,2099330595&fm=253&fmt=auto&app=138&f=JPEG?w=950&h=500">
 
 
 
@@ -298,7 +298,8 @@
       
 
       
-        <p>[TOC]</p>
+        <p>title: Docker<br>date: 2022-04-9 13:26:12<br>tags:</p>
+<p>[TOC]</p>
 <h2 id="Docker概述"><a href="#Docker概述" class="headerlink" title="Docker概述"></a>Docker概述</h2><p>看B站狂神的视频自己做的Docker笔记：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1og4y1q7M4">https://www.bilibili.com/video/BV1og4y1q7M4</a></p>
 <h3 id="什么是Docker"><a href="#什么是Docker" class="headerlink" title="什么是Docker"></a>什么是Docker</h3><ul>
 <li>轻量级的应用容器引擎</li>
@@ -321,7 +322,7 @@
 </ul>
 <p>虚拟机笨重：2G，启动慢（分钟级）</p>
 <p>Docker轻便：几K，几十M，启动快（秒级别）</p>
-<p><img src="/docker%5Cvisualmachine_docker.webp" alt="visualmachine_docker"></p>
+<p><img src="https://img0.baidu.com/it/u=4060287005,2099330595&fm=253&fmt=auto&app=138&f=JPEG?w=950&h=500" alt="img"></p>
 <blockquote>
 <p><strong>DevOps（开发+运维）</strong></p>
 </blockquote>
@@ -346,7 +347,7 @@
 <li>Docker 文档：<a target="_blank" rel="noopener" href="https://docs.docker.com/">https://docs.docker.com/</a></li>
 </ul>
 <h2 id="Docker安装"><a href="#Docker安装" class="headerlink" title="Docker安装"></a>Docker安装</h2><h3 id="Docker的基本组成"><a href="#Docker的基本组成" class="headerlink" title="Docker的基本组成"></a>Docker的基本组成</h3><p>Docker架构图：</p>
-<p><img src="/docker%5Cbase-arc.webp" alt="base-arc"></p>
+<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimages2018.cnblogs.com%2Fblog%2F1197333%2F201807%2F1197333-20180715120220239-1924184135.png&refer=http%3A%2F%2Fimages2018.cnblogs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1651390630&t=4e03ae182fb86f63695c71225fe60b5b" alt="点击查看图片来源"></p>
 <p><strong>镜像（image）</strong></p>
 <p>image好比一个模板，一个image可以产生多个container</p>
 <p><strong>容器（container）</strong></p>
@@ -402,7 +403,7 @@
 
 <h5 id="从容器内拷贝文件到主机"><a href="#从容器内拷贝文件到主机" class="headerlink" title="从容器内拷贝文件到主机"></a>从容器内拷贝文件到主机</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">docker cp 容器id:文件路径 主机目录</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">命令行版本</span></span><br><span class="line">root@LAPTOP-V93L2CL4:/home/getting-started-master# docker run -it ubuntu /bin/bash </span><br><span class="line">root@da2daf8432ee:/# root@LAPTOP-V93L2CL4:/home/getting-started-master #</span><br><span class="line">root@LAPTOP-V93L2CL4:/home/getting-started-master# docker ps</span><br><span class="line">CONTAINER ID   IMAGE     COMMAND       CREATED          STATUS          PORTS     NAMES</span><br><span class="line">da2daf8432ee   ubuntu    &quot;/bin/bash&quot;   20 seconds ago   Up 18 seconds             nifty_brown</span><br><span class="line">root@LAPTOP-V93L2CL4:/home/getting-started-master# docker attach da2 #进入这个容器</span><br><span class="line">root@da2daf8432ee:/# cd /home</span><br><span class="line">root@da2daf8432ee:/home# ls</span><br><span class="line">root@da2daf8432ee:/home# touch test.java</span><br><span class="line">root@da2daf8432ee:/home# exit</span><br><span class="line">exit</span><br><span class="line">root@LAPTOP-V93L2CL4:/home/getting-started-master# docker cp da2:/home/test.java /home</span><br><span class="line">root@LAPTOP-V93L2CL4:/home/getting-started-master# ls /home</span><br><span class="line">getting-started-master  test.java</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">简洁版</span></span><br><span class="line">docker run -it ubuntu /bin/bash #创建并进入容器</span><br><span class="line">touch /home/test.java #在容器里创建文件</span><br><span class="line">exit #退出并终止容器</span><br><span class="line">docker ps #查看容器id</span><br><span class="line">docker cp 容器id:/home/test.java /home #保存容器文件到主机</span><br><span class="line">ls /home #查看刚保存的文件是否在主机下</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">拷贝是一个手动过程，未来使用-v卷的技术，可以实现打通小结</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p><img src="/docker%5Cimage-20220402222357941.png" alt="image-20220402222357941"></p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p><img src="C:\Users\wmj\AppData\Roaming\Typora\typora-user-images\image-20220402222357941.png" alt="image-20220402222357941"></p>
 <h3 id="作业练习"><a href="#作业练习" class="headerlink" title="作业练习"></a>作业练习</h3><blockquote>
 <p>作业1 Docker安装Nginx</p>
 </blockquote>
@@ -468,7 +469,7 @@
 </blockquote>
 <p>docker网络使用的是桥接的方式</p>
 <p>Docker中所有的网络接口都是虚拟的。虚拟转发效率高，内网快。</p>
-<p><img src="/docker%5Cdocker-network.png" alt="docker-network"></p>
+<p><img src="C:\Users\wmj\Desktop\docker\docker\docker-network.png" alt="docker-network"></p>
 <h3 id="–link（不推荐）"><a href="#–link（不推荐）" class="headerlink" title="–link（不推荐）"></a>–link（不推荐）</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">在linux主机中，wsl不行</span></span><br><span class="line">docker exec -it tomcat01 ping tomcat01 #ping不通</span><br><span class="line">docker run -d -P --name tomcat03 --link tomcat02 tomcat #run的时候 --link</span><br><span class="line">docker exec -it tomcat03 ping tomcat02 #可以直接ping通</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">反向可以ping通吗？不行</span></span><br><span class="line"></span><br><span class="line">docker network --help #查看docker network帮助</span><br><span class="line">docker network ls</span><br><span class="line">docker network inspect 6dbcf9dfde88</span><br><span class="line"></span><br><span class="line">docker exec -it tomcat03 cat /etc/hosts #会发现把tomcat02的映射写死在文件里了</span><br></pre></td></tr></table></figure>
 
 <p>–link实际是增加了一个映射的配置</p>
@@ -491,7 +492,7 @@
 <p>集群之间互相隔离（也不是完全不能连通，下一章会讲）</p>
 <h3 id="网络连通"><a href="#网络连通" class="headerlink" title="网络连通"></a>网络连通</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker network connect --help</span><br><span class="line">docker network connect mynet tomcat01</span><br><span class="line">docker network inspect mynet</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">会发现直接将tomcat01加到mynet里面去</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">所以是一个容器，两个ip</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/docker%5Cnetwork-connection.png" alt="network-connection"></p>
+<p><img src="C:\Users\wmj\Desktop\docker\docker\network-connection.png" alt="network-connection"></p>
 <h3 id="实战：部署Redis集群"><a href="#实战：部署Redis集群" class="headerlink" title="实战：部署Redis集群"></a>实战：部署Redis集群</h3><ol>
 <li>创建redis配置</li>
 </ol>
@@ -531,8 +532,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2022/03/24/python/" rel="next" title="Plint">
-                <i class="fa fa-chevron-left"></i> Plint
+              <a href="/2022/03/24/self-website/" rel="next" title="Github+jekyll 个人网站博客">
+                <i class="fa fa-chevron-left"></i> Github+jekyll 个人网站博客
               </a>
             
           </div>
