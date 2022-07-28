@@ -1,0 +1,227 @@
+@charset 'utf-8'
+html{font-size:47px;}
+body{font-size:16px;}
+*{margin:0;padding:0;font-family: "微软雅黑"; }
+input,li{-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-appearance: none;outline:none}
+li{list-style: none;}
+/*购买模拟卡未登录*/
+body{background: #f8f8f8;font-size: 0.3rem;}
+input[type="button"], input[type="submit"], input[type="reset"] {
+-webkit-appearance: none;
+}
+textarea { -webkit-appearance: none;}
+
+.buy-num{height: 1.3rem;line-height: 1.3rem;font-size: 0.3rem;padding:0 0.3rem;overflow: hidden;}
+.buy-num span{font-size: 0.25rem;display: inline-block;margin-left:0.1rem;}
+.buy-num>div{float: left;position: relative;}
+.buy-option{left: 0.6rem;top:0.1rem;}
+.minus-btn{width:0.5rem;height: 0.5rem;background: url(../images/minus.png) no-repeat;background-size:100% 100%;border: none;outline: none;}
+.add-btn{width:0.5rem;height: 0.5rem;background: url(../images/add.png)  no-repeat;background-size:100% 100%;border: none;outline: none;}
+.numBuy{width:0.5rem;height: 0.5rem;border: none;text-align: center;top:-0.15rem;position: relative;background: #F8F8F8;}
+.verifications,.mobile-num, .mobile-code{height: 0.8rem;background: #ffffff;font-size: 0.3rem;padding:0 0.3rem;line-height: 0.8rem;overflow: hidden;}
+.verifications input,.mobile-num input{outline: none;margin-left: 0.3rem;font-size: 0.3rem;border: none;width:2rem;}
+.codeImg{width:1rem;height: 0.4rem;background: #666666;display: inline-block;position: relative;top:0.1rem;}
+.mobile-num{margin-top:0.28rem;}
+.mobile-num input{width:4rem;}
+.send-code{height:0.9rem;padding:0.12rem 0.3rem;}
+.send-code p{font-size: 0.24rem;color: #f00;}
+.sendCode-btn input{border:1px solid #3685f8;float: right;background: transparent;color: #3685f8;padding:0 0.15rem;height: 0.48rem;outline: none;margin-top: 0.08rem;}
+.mobile-code input{outline: none;margin-left: 0.3rem;font-size: 0.3rem;border: none;width:2rem;}
+.noMob-end{padding:0.3rem;}
+.warm{color:#999999;font-size: 0.24rem;}
+.buy-now,.buy-record{width:6.9rem;height: 0.8rem;background: #3685f8;border: none;outline: none;color: #fff;margin-top: 0.1rem;border-radius: 0;}
+.buy-record{background: #fff;border:#3685F8;outline: none;color: #3685F8;margin-top: 0.2rem;}
+.check-type{margin-top: 0.3rem;}
+.check-type span{color: #3685F8;}
+/*购买记录*/
+.card-list li{padding:0.18rem 0.3rem 0.18rem 0.6rem;}
+.card-list li div{background: #ffffff;height: 1.4rem;position: relative;}
+.card-list li:nth-child(4n+1){background: url(../images/listGreen.png) no-repeat;background-position:0.3rem 0;background-size: contain;}
+.card-list li:nth-child(4n+2){background: url(../images/listOrange.png) no-repeat;background-position:0.3rem 0;background-size: contain;}
+.card-list li:nth-child(4n+3){background: url(../images/listPurple.png) no-repeat;background-position:0.3rem 0;background-size: contain;}
+.card-list li:nth-child(4n){background: url(../images/listRed.png) no-repeat;background-position:0.3rem 0;background-size: contain;}
+.card-list li:first-child{background: url(../images/listFirst.png) no-repeat;background-position:0.3rem 0;background-size: contain;}
+.card-list li:last-child{background: url(../images/listLast.png) no-repeat;background-position:0.3rem 0;background-size: contain;}
+.card-list li div h3{padding:0.16rem 0 0.08rem 0.16rem;}
+.moneyInAll{display: inline-block;position: absolute;right: 0.08rem;top:0.16rem;}
+.card-list div p{color:#999999;font-size:0,24rem;padding-left:0.16rem;}
+.more-section{height: 1rem;text-align: center;padding-top:0.2rem;}
+.more-card{border: none;background: transparent;outline: none;border:1px solid #1375E6;padding:0.1rem 0.2rem;color: #1375E6;}
+/*购卡详情*/
+.buy-number{font-size: 0.32rem;text-align: center;height: 0.78rem;line-height: 0.78rem;border-bottom: 1px solid #1375e6;}
+.cards{margin-top:2px}
+.cards li{margin:0 0.3rem 0.3rem;height: 1.1rem;border-radius: 3px;position: relative;line-height: 0.5rem;padding-top:0.2rem;padding-left:0.2rem;color:#fff;}
+.cards li:nth-child(2n){background: #3b83f7;}
+
+.cards li:nth-child(2n+1){background: #1fc37c;}
+.card-number{}
+.card-password{}
+.card-icon{position:absolute;width:0.58rem;height: 0.36rem;right:0.25rem;top:0.21rem;opacity: 0.5;}
+.card-icon img{width:100%;height: 100%;}
+.card-state{width:1.2rem;height: 0.4rem;background: #fff;position: absolute;top:0.21rem;left:3.47rem;border-radius: 0.2rem;line-height: 0.4rem;text-align: center;color: #FA5572;font-size: 0.26rem;}
+.cards li.unUsed{background:#929292;}
+.unUsed .card-state{color: #929292;}
+/*点击模拟考试（无卡）*/
+.nocard-words{height: 1.5rem;text-align: center;line-height: 1.8rem;}
+.buyAdd{text-align: center;}
+.buyAdd input{width:3rem;height: 0.8rem;border:1px solid #2e88f8;background: #2e88f8;color: #fff;font-size: 0.3rem;border-radius: 0;}
+.buyAdd input:last-child{background: transparent;color:#1375E6;margin-left: 0.3rem;}
+.gray-warn{height: 1.34rem;border-bottom: 1px solid #eeeeee;text-align: center;line-height: 1.44rem;position: relative;}
+.gray-warn img{width:0.43rem;height: 0.43rem;position: relative;top:0.08rem;display: inline-block;margin-right: 0.1rem;}
+.gray-warn span{color: #3685f8;}
+.user-introduce{height: 0.78rem;text-align: center;line-height: 0.78rem;color: #3685F8;}
+.ads{position: fixed;bottom: 0;left: 0;height: 2.9rem;background: #8B4CCE;width:100%;}
+/*我的模拟卡*/
+.myCards li{height: 1.58rem;}
+
+.myCards li p,.cardDetail li p{border-top: 1px dashed #ddd;position: absolute;bottom: 0;left: 0;height: 0.48rem;width: 100%;font-size: 0.24rem;padding-left: 0.2rem;box-sizing: border-box;}
+.addcards{box-shadow: 0 -3px 10px #ddd;height: 0.98rem;width: 100%;position: fixed;bottom: 0;left: 0;background: #f8f8f8 ;}
+.addcards .add{width:2.94rem;padding-left: 1.4rem;box-sizing: border-box;height: 100%;border: none;background: transparent;font-size:0.32rem;color: #3685f8;background: url(../images/addcard.png) no-repeat;background-size: 0.54rem 0.54rem;background-position: 1rem 0.2rem;outline:none;float: left;}
+.addcards .buycards{width:4.25rem;height: 0.78rem;float: left;margin-top:0.08rem;border: none;background: #2c89f8;color: #fff;font-size:0.35rem;}
+.more-sections{height: 1rem;text-align: center;padding-top:0.2rem;margin-bottom: 1.3rem;}
+/*我的模拟卡详情*/
+.cardDetail li.singleCard{height: 2.1rem;background: #3884f7;}
+.card-content{height: 1.28rem;line-height: 0.6rem;padding-left: 0.3rem;}
+.card-contentNo{line-height: 0.6rem;padding-left: 0.3rem;background: #fff;padding-right:0.3rem;margin-bottom: 0.2rem;color:#f00;font-size:0.26rem;}
+.test-record{height: 0.64rem;background: #3685f8;text-align: center;line-height: 0.64rem;color: #fff;font-size: 0.32rem;}
+.testRecords li{height: 0.7rem;border-bottom: 1px dashed #ddd;line-height: 0.7rem;background: #fff;}
+.test-time{width:3.03rem;text-align: center;display: inline-block;float: left;}
+.test-minues{width:2.77rem;text-align: center;display: inline-block;float: left;}
+.test-score{width:1.65rem;text-align: center;display: inline-block;float: right;}
+.begin-test{position: fixed;bottom:0;left: 0;height: 1.28rem;}
+.begin-test input,.insure input{width:6.9rem;height: 0.8rem;background: #1fc37c;text-align: center;line-height: 0.8rem;border: none;margin-left:0.3rem;margin-top:0.3rem;outline: none;color: #fff;font-size: 0.32rem;}
+.selectJob>li{margin-top:0.2rem;background: #fff;height: 0.8rem;line-height: 0.8rem;padding:0 0.3rem;position: relative;}
+.selectJob>li input[type="text"]{border: none;height: 100%;width:5.35rem;background:url(../images/right.png) no-repeat;background-position: right 0.25rem;background-size: 0.17rem 0.3rem;font-size:0.32rem;position:absolute;top:0;right:0.1rem;}
+.trade-style{position: absolute;width:5.7rem;left: 1.7rem;top: 0;height: 0.8rem;}
+.trade-style li{display: inline-block;float: left;height: 0.8rem;line-height: 0.8rem; margin-left:0.5rem}
+.insure{height: 1.28rem;}
+.single-list{width:100%;left: 0;}
+.single-list li{display: block;clear: both;width:100%;font-size: 0.26rem;overflow: auto;}
+/*弹窗*/
+/* .newAlert,.newAlert1,.newAlert2,.newAlert3,.newAlert4{display: none; background: #fff;width:80%;height:70%;overflow-y:scroll;overflow-x:hidden; position: fixed;left:10%; top:10%;z-index:100;padding: 0.2rem ;border-radius: 4px;}
+.bgGrey{display:none; width:100%;height: 100%;top:0;left: 0;opacity: 0.5; position: fixed; z-index:10; background:#000}background: #000;
+.whiteSpace{overflow: auto;box-sizing: border-box; margin-left:1rem} */
+
+/*用户绑定*/
+.unlock{text-align: center;margin-top: 2rem;}
+.unlock input{background: #3685f8;width:6.9rem;height: 0.8rem;text-align: center;line-height: 0.8rem;border: none;outline: none;color: #fff;}
+.unlockVerifications{margin-top: 0.3rem;}
+/*添加模拟卡*/
+.add-title{height: 0.8rem;line-height: 0.8rem;font-size: 0.32rem;text-align: center;border-bottom: 1px solid #3685f8;color:#444;margin-bottom: 1rem;}
+.buyCard-gray{border-bottom: none;height:0.5rem;margin-top: 0.3rem;padding:0 0.3rem;line-height: 0.5rem;}
+/*我的模拟卡未绑定工种*/
+.gray-warns{border-bottom: none;height: 0.8rem;background: #fff;line-height: 0.8rem;}
+.buyAndTurn{height: 1rem;line-height: 1rem;text-align: right;padding:0 0.3rem;}
+.buyAndTurn span{display: inline-block;margin-left: 0.4rem;color:  #3685f8;}
+.user-introduces{padding-top:0.3rem;color:#3685F8;border-top: 1px solid #eee;width:6.9rem;margin: 0 auto;margin-top: 0.3rem;}
+.user-introduces p{text-align: right;margin-bottom: 0.3rem;}
+.myCards li.singleCard{background: #3884f7 ;}
+/*我的模拟卡开始考试*/
+.exam-begin{text-align: center;margin-top: 0.3rem;}
+.exam-begin input{text-align: center;width:6.9rem;height: 0.8rem;background: #20BF7A;border: none;outline: none;color: #fff;font-size: 0.32rem;}
+.user-introduces p span{display: inline-block;margin-left: 0.5rem;}
+.work-kind{padding:0 0.3rem;height: 1.5rem;background: #fff;}
+.works span{display: inline-block;width: 5.3rem;position:relative;left:1.6rem;top:0.1rem;}
+.work-kind .span-tit{width:1.6rem;height: 0.4rem;line-height: 0.4rem;display: inline-block;position: absolute;left: 0;top: 0.1rem;}
+.works{position: relative;}
+.change-work{text-align: right;color: #3685f8;}
+.change-work img{width:0.3rem;height: 0.3rem;display: inline-block;margin-right: 0.1rem;}
+.exam-belong{margin-top:0.2rem;}
+.exam-record table{width:100%;}
+.exam-record td{text-align: center;border-bottom: 1px dashed #ccc;}
+.see-more{border: none;outline: none;background: #3685F8;padding:0.1rem 0.2rem;color: #fff;margin:0.05rem;font-size:0.3rem;}
+/*解除绑定*/
+.canncelLock span{display: inline-block;height: 2rem;line-height: 2rem;text-align: center;width:6.9rem;margin:0 auto;font-size: 0.32rem;}
+.canncelLock p{text-align: center;color: #3685F8;font-weight: bold;}
+/*考试页面*/
+.exam-head{height: 0.87rem;border-bottom: 1px solid #3685f8;line-height: 0.87rem;padding:0 0.3rem;}
+.user-writed{float: left;}
+.time-remain{float: right;position: relative;}
+.time-remain img{width:0.33rem;height: 0.37rem;display: inline-block;margin-right: 0.1rem;margin-top: 0.2rem;}
+.user-writed span{color: #3685F8;}
+.time-item{display: inline-block;float: right;}
+.exam-content{padding: 20px}
+.exam-content p{margin-bottom: 10px;font-size:14px; line-height:30px}
+.exam-content ul li{padding:10px 0;}
+.exam-content ul li input{width:20px;height:20px;border-radius: 50%;border: 1px solid #3685F8;background: transparent;text-align: center;line-height: 20px;margin-right: 10px;outline: none;}
+.exam-content ul li.selected{color: #3685F8;}
+.exam-content ul li.selected input{background: #3685F8;color: #fff;}
+.footer{height: 1.5rem;width:100%;padding:0.58rem 0.3rem 0;}
+.prev-btn{cursor:pointer;width:60px;height:30px;text-align: center;line-height: 30px;border: #3685F8 1px solid; border-radius: 5px;background:transparent;outline: none;color: #3685F8;font-size: 14px;}
+.next-btn{cursor:pointer;width:60px;height: 30px;text-align: center;line-height:30px;border: #3685F8 1px solid; border-radius: 5px;background:transparent;outline: none;color: #3685F8;font-size: 14px;}
+.submit-btn{background: #3685F8;width:60px;height: 30px;outline: none;border-radius: 5px;border: none;position: absolute;left:3.2rem;top:0.2rem;color: #fff;font-size: 14px;}
+.subject{top:1.5rem;position: fixed;}
+.subject li{width:10%;float: left;box-sizing: border-box;text-align: center;margin-bottom: 0.1rem;}
+.subject li input{width:80%;background: #999;border: none;outline: none;color: #fff;}
+.subject li.writed-tit input{background: #3685F8;}
+.close-btn{position: fixed;left: 50%;transform: translateX(-50%);}
+.close-btn input{width:0.5rem;height: 0.5rem;border: 1px solid #3685F8;background: transparent;border-radius: 0.25rem;color: #fff;outline: none;}
+.chakan{display:none;}
+/*考试成绩*/
+.resolute{height: 1.6rem;background: #fff;width:6.9rem;margin:0 auto;margin-top: 0.36rem;box-sizing: border-box;padding:0 0.3rem;}
+.resolute p{text-align: center;line-height: 0.8rem;}
+.score{color: #ee0000;font-size: 0.4rem;line-height: 0.8rem;}
+.used-time{display: inline-block;float: left;line-height: 0.6rem;}
+.set-time{float: right;line-height: 0.6rem;}
+.see-wrong{width:6.9rem;margin: 0 auto;margin-top: 0.7rem;}
+.see-wrong input{width:100%;height: 0.8rem;background: #3685F8;color: #fff;text-align: center;margin-bottom:0.3rem;line-height: 0.8rem;border: none;outline: none;font-size: 0.32rem;}
+/*查看错题页面*/
+.for-wrong{border-top: #3685F8 1px solid;padding: 0.3rem;}
+.red-words{color: #f00;font-size:0.3rem}
+.green-words{color: #03AD03;display: inline-block;margin-top: 0.1rem;margin-bottom: 0.1rem;font-size:0.3rem}
+.ask-us{color: #3685F8;font-size:0.3rem}
+.wrong-btn{background: #3685F8;width:1.1rem;height: 1.1rem;outline: none;border-radius: 0.55rem;border: none;position: absolute;left: 50%;transform: translateX(-50%);top:0.2rem;color: #fff;font-size: 0.32rem;line-height: 0.4rem;box-sizing: border-box;}
+/*checkbox复写*/
+.checkedDiv {
+	position: relative;top:0.1rem;
+width: 0.32rem;
+height: 0.32rem;
+float: left;
+cursor: pointer;
+margin: 0.1rem 0.06rem;
+text-align: center;
+background-image: url(../images/checkbox.png);
+background-repeat: no-repeat;
+background-size: 0.7rem 0.3rem;
+background-position: -0.4rem 0rem;
+box-sizing: border-box;
+}
+.on_check{color: #3685f8;}
+.on_check .checkedDiv{
+background-position: 0.01rem 0rem ;
+}
+.checkboxclass {
+width:0;height: 0;
+opacity: 0;
+cursor: pointer;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+filter: alpha(opacity=0);
+}
+/*倒计时*/
+.time-item strong {
+
+	font-weight: normal;
+
+	
+}
+
+#day_show {
+
+	float:left;
+
+
+
+}
+
+.item-title .unit {
+
+	background:none;
+
+	line-height:49px;
+
+	font-size:24px;
+
+	
+	float:left;
+
+}
